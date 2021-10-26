@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8F4DD8AD26CB6D5E00DF598B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DD8AC26CB6D5E00DF598B /* AppDelegate.swift */; };
 		8F4DD8AF26CB6D5E00DF598B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DD8AE26CB6D5E00DF598B /* SceneDelegate.swift */; };
-		8F4DD8B126CB6D5E00DF598B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4DD8B026CB6D5E00DF598B /* ViewController.swift */; };
 		8F4DD8B426CB6D5E00DF598B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4DD8B226CB6D5E00DF598B /* Main.storyboard */; };
 		8F4DD8B626CB6D6200DF598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4DD8B526CB6D6200DF598B /* Assets.xcassets */; };
 		8F4DD8B926CB6D6200DF598B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4DD8B726CB6D6200DF598B /* LaunchScreen.storyboard */; };
+		8FF2309726DEF9E700740F32 /* SplitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2309626DEF9E700740F32 /* SplitListViewController.swift */; };
+		8FF2309926DEFB1C00740F32 /* SplitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2309826DEFB1C00740F32 /* SplitModel.swift */; };
+		8FF2309D26DF29F600740F32 /* DetailSplitExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2309C26DF29F600740F32 /* DetailSplitExpensesViewController.swift */; };
+		8FF2309F26E04A7400740F32 /* TestTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2309E26E04A7400740F32 /* TestTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F4DD8A926CB6D5E00DF598B /* SplitTheAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitTheAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4DD8AC26CB6D5E00DF598B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F4DD8AE26CB6D5E00DF598B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F4DD8B026CB6D5E00DF598B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F4DD8B326CB6D5E00DF598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F4DD8B526CB6D6200DF598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F4DD8B826CB6D6200DF598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F4DD8BA26CB6D6200DF598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF2309626DEF9E700740F32 /* SplitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitListViewController.swift; sourceTree = "<group>"; };
+		8FF2309826DEFB1C00740F32 /* SplitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitModel.swift; sourceTree = "<group>"; };
+		8FF2309C26DF29F600740F32 /* DetailSplitExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSplitExpensesViewController.swift; sourceTree = "<group>"; };
+		8FF2309E26E04A7400740F32 /* TestTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		8F4DD8AB26CB6D5E00DF598B /* SplitTheAdventure */ = {
 			isa = PBXGroup;
 			children = (
-				8F4DD8AC26CB6D5E00DF598B /* AppDelegate.swift */,
-				8F4DD8AE26CB6D5E00DF598B /* SceneDelegate.swift */,
-				8F4DD8B026CB6D5E00DF598B /* ViewController.swift */,
-				8F4DD8B226CB6D5E00DF598B /* Main.storyboard */,
+				8F4DD8C326CB6DAE00DF598B /* View */,
+				8F4DD8C226CB6DA800DF598B /* Model */,
+				8F4DD8C126CB6DA000DF598B /* Controllers */,
+				8F4DD8C026CB6D9100DF598B /* Storyboards */,
 				8F4DD8B526CB6D6200DF598B /* Assets.xcassets */,
-				8F4DD8B726CB6D6200DF598B /* LaunchScreen.storyboard */,
 				8F4DD8BA26CB6D6200DF598B /* Info.plist */,
 			);
 			path = SplitTheAdventure;
+			sourceTree = "<group>";
+		};
+		8F4DD8C026CB6D9100DF598B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F4DD8B226CB6D5E00DF598B /* Main.storyboard */,
+				8F4DD8B726CB6D6200DF598B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8F4DD8C126CB6DA000DF598B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F4DD8AC26CB6D5E00DF598B /* AppDelegate.swift */,
+				8F4DD8AE26CB6D5E00DF598B /* SceneDelegate.swift */,
+				8FF2309626DEF9E700740F32 /* SplitListViewController.swift */,
+				8FF2309C26DF29F600740F32 /* DetailSplitExpensesViewController.swift */,
+				8FF2309E26E04A7400740F32 /* TestTabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8F4DD8C226CB6DA800DF598B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FF2309826DEFB1C00740F32 /* SplitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F4DD8C326CB6DAE00DF598B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F4DD8B126CB6D5E00DF598B /* ViewController.swift in Sources */,
+				8FF2309926DEFB1C00740F32 /* SplitModel.swift in Sources */,
 				8F4DD8AD26CB6D5E00DF598B /* AppDelegate.swift in Sources */,
+				8FF2309726DEF9E700740F32 /* SplitListViewController.swift in Sources */,
+				8FF2309D26DF29F600740F32 /* DetailSplitExpensesViewController.swift in Sources */,
+				8FF2309F26E04A7400740F32 /* TestTabBarViewController.swift in Sources */,
 				8F4DD8AF26CB6D5E00DF598B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
